@@ -1,0 +1,1093 @@
+@media (min-width:1900px) {
+
+
+    /* visual */
+    #visual {
+        width: 100%;
+        height: 800px;
+        background-color: #222;
+        position: relative;
+    }
+
+    .viText {
+        color: hsl(0, 0%, 80%);
+        font-size: 290px;
+        padding-top: 50px;
+    }
+
+    .viText p {
+        width: 100%;
+        height: 380px;
+        font-family: "Rubik Dirt", system-ui;
+    }
+
+    .viText span {
+        width: 100%;
+        height: 10px;
+        display: block;
+        transition: 2s;
+        overflow: hidden;
+    }
+
+    #visual .star {
+        font-size: 150px;
+        position: absolute;
+        top: 150px;
+        right: 400px;
+        color: #fff;
+        animation: star 5s linear infinite;
+    }
+
+    @keyframes star {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        50% {
+            transform: rotate(180deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    /* text */
+    #visual .bottomWrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    #visual .bottomText {
+        width: 98%;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        bottom: 10px;
+    }
+
+    #visual .bottomText ul {
+        display: flex;
+        align-items: center;
+    }
+
+    #visual .bottomText ul li {
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+    }
+
+    #visual .bottomText ul li>p {
+        width: 100px;
+    }
+
+    #visual .more {
+        width: 150px;
+        padding: 5px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 40px;
+    }
+
+    #visual .more:hover {
+        background-color: #ccc;
+        color: #222;
+    }
+
+    #visual .more i {
+        margin-left: 10px;
+    }
+
+    /* container */
+    #container {
+        height: 500vh;
+    }
+
+    .innerScroll {
+        width: 200vw;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+
+    .scrollWrap {
+        display: flex;
+        padding: 200px 150px 50px;
+        font-family: 'TTLaundryGothicB';
+    }
+
+    .scrollWrap li {
+        position: relative;
+    }
+
+    .scrollWrap .big {
+        width: 1300px;
+        height: 400px;
+        margin-right: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        transition: 2s;
+    }
+
+    .scrollWrap .big img {
+        width: 500px;
+    }
+
+    .scrollWrap .big p {
+        font-size: 60px;
+    }
+
+    .scrollWrap .big i {
+        font-size: 200px;
+    }
+
+    .scrollWrap .big:hover i {
+        transform: rotate(360deg);
+        transition: 5s;
+    }
+
+    .scrollWrap .B1 {
+        margin-left: 300px;
+    }
+
+    .scrollWrap .B2 {
+        margin-left: 200px;
+    }
+
+    .scrollWrap .B3 {
+        margin-left: 200px;
+    }
+
+    .scrollWrap .small {
+        display: flex;
+        position: absolute;
+        bottom: -30px;
+        right: 150px;
+        line-height: 35px;
+        opacity: 0;
+    }
+
+    .scrollWrap .small .moreBtn {
+        width: 100px;
+        margin-left: 15px;
+        background-color: #ccc;
+        border-radius: 40px;
+        text-align: center;
+    }
+
+    .scrollWrap li:hover .small {
+        bottom: 20px;
+        opacity: 1;
+        transition: 1s;
+    }
+
+    .innerScroll .longText {
+        display: flex;
+        align-items: center;
+        padding-left: 200px;
+    }
+
+    .innerScroll .longText span {
+        width: 0px;
+        display: block;
+        overflow: hidden;
+        transition: 2s;
+    }
+
+    .innerScroll .longText p {
+        display: flex;
+        font-family: "Climate Crisis", sans-serif;
+        font-size: 200px;
+    }
+
+    /* section */
+    #section {
+        height: 200vh;
+        padding-top: 1000px;
+        transition: 2s;
+    }
+
+    /* sec1 */
+    .centerWidth {
+        width: 70%;
+        margin: 0px auto;
+        position: relative;
+    }
+
+    .sec1 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        opacity: 0;
+        transition: 2s;
+        /* background: red; */
+    }
+
+    .sec1 li {
+        border-radius: 40px;
+        margin: 50px;
+        overflow: hidden;
+    }
+
+    .sec1 img:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .sec1 .one {
+        height: 560px;
+    }
+
+    .sec1 .thr {
+        width: 700px;
+        height: 1020px;
+    }
+
+    .sec1 .fou {
+        height: 400px;
+        position: absolute;
+        top: 35%;
+        left: 1%;
+    }
+
+    .sec1 .fiv {
+        height: 340px;
+    }
+
+    .sec1 .six {
+        height: 520px;
+    }
+
+    /* sec2 */
+    .sec2 .notice {
+        width: 100%;
+        height: 7000px;
+        background-image: linear-gradient(to bottom, #fff, lightgray);
+        position: relative;
+        /* background: yellow; */
+    }
+
+    /* slide */
+    .slideWrap {
+        width: 1300px;
+        height: 470px;
+        position: absolute;
+        top: 500px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
+    .slides {
+        display: flex;
+    }
+
+    .slides img {
+        width: 1300px;
+    }
+
+    .sec2 .bgTextMix {
+        position: relative;
+    }
+
+    .sec2 .bgTextMix .jul {
+        font-size: 80px;
+        font-family: 'TTLaundryGothicB';
+        transition: 1s;
+        position: absolute;
+        opacity: 0;
+    }
+
+    .jul {
+        display: flex;
+    }
+
+    .julArrow {
+        margin-left: 190px;
+        opacity: 0;
+        transition: 2s;
+    }
+
+    .julArrow:hover {
+        filter: invert(100%);
+        transition: 0.5s;
+    }
+
+    .rollUp h4 {
+        width: 50%;
+        font-size: 40px;
+        text-align: left;
+        font-family: 'TTLaundryGothicB';
+        transition: 1s;
+        opacity: 0;
+    }
+
+    .rollUp p {
+        width: 20%;
+        font-size: 13px;
+        text-align: right;
+        font-family: 'TTLaundryGothicB';
+        transition: 1s;
+        /* opacity: 0; */
+        /* background: yellow; */
+    }
+
+    /* rollingText */
+    .rollingText {
+        width: 100%;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .track {
+        position: relative;
+        width: 3000px;
+        animation: roll 10s linear infinite;
+    }
+
+    @keyframes roll {
+        0% {
+            left: 0;
+        }
+
+        100% {
+            left: -650px;
+        }
+    }
+
+    .track p {
+        float: left;
+        width: 650px;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .rollingText:hover {
+        background-color: #222;
+        color: #fff;
+    }
+}
+
+@media (min-width:767px) and (max-width:1900px) {
+
+
+    /* visual */
+    #visual {
+        width: 100%;
+        height: 800px;
+        background-color: #222;
+        position: relative;
+    }
+
+    .viText {
+        color: hsl(0, 0%, 80%);
+        font-size: 290px;
+        padding-top: 50px;
+    }
+
+    .viText p {
+        width: 100%;
+        height: 380px;
+        font-family: "Rubik Dirt", system-ui;
+    }
+
+    .viText span {
+        width: 100%;
+        height: 10px;
+        display: block;
+        transition: 2s;
+        overflow: hidden;
+    }
+
+    #visual .star {
+        font-size: 150px;
+        position: absolute;
+        top: 150px;
+        right: 400px;
+        color: #fff;
+        animation: star 5s linear infinite;
+    }
+
+    @keyframes star {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        50% {
+            transform: rotate(180deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    /* text */
+    #visual .bottomWrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    #visual .bottomText {
+        width: 98%;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        bottom: 10px;
+    }
+
+    #visual .bottomText ul {
+        display: flex;
+        align-items: center;
+    }
+
+    #visual .bottomText ul li {
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+    }
+
+    #visual .bottomText ul li>p {
+        width: 100px;
+    }
+
+    #visual .more {
+        width: 150px;
+        padding: 5px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 40px;
+    }
+
+    #visual .more:hover {
+        background-color: #ccc;
+        color: #222;
+    }
+
+    #visual .more i {
+        margin-left: 10px;
+    }
+
+    /* container */
+    #container {
+        height: 500vh;
+    }
+
+    .innerScroll {
+        width: 200vw;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+
+    .scrollWrap {
+        display: flex;
+        padding: 200px 150px 50px;
+        font-family: 'TTLaundryGothicB';
+    }
+
+    .scrollWrap li {
+        position: relative;
+    }
+
+    .scrollWrap .big {
+        width: 1300px;
+        height: 400px;
+        margin-right: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        transition: 2s;
+    }
+
+    .scrollWrap .big img {
+        width: 500px;
+    }
+
+    .scrollWrap .big p {
+        font-size: 60px;
+    }
+
+    .scrollWrap .big i {
+        font-size: 200px;
+    }
+
+    .scrollWrap .big:hover i {
+        transform: rotate(360deg);
+        transition: 5s;
+    }
+
+    .scrollWrap .B1 {
+        margin-left: 300px;
+    }
+
+    .scrollWrap .B2 {
+        margin-left: 200px;
+    }
+
+    .scrollWrap .B3 {
+        margin-left: 200px;
+    }
+
+    .scrollWrap .small {
+        display: flex;
+        position: absolute;
+        bottom: -30px;
+        right: 150px;
+        line-height: 35px;
+        opacity: 0;
+    }
+
+    .scrollWrap .small .moreBtn {
+        width: 100px;
+        margin-left: 15px;
+        background-color: #ccc;
+        border-radius: 40px;
+        text-align: center;
+    }
+
+    .scrollWrap li:hover .small {
+        bottom: 20px;
+        opacity: 1;
+        transition: 1s;
+    }
+
+    .innerScroll .longText {
+        display: flex;
+        align-items: center;
+        padding-left: 200px;
+    }
+
+    .innerScroll .longText span {
+        width: 0px;
+        display: block;
+        overflow: hidden;
+        transition: 2s;
+    }
+
+    .innerScroll .longText p {
+        display: flex;
+        font-family: "Climate Crisis", sans-serif;
+        font-size: 200px;
+    }
+
+    /* section */
+    #section {
+        height: 200vh;
+        padding-top: 1000px;
+        transition: 2s;
+    }
+
+    /* sec1 */
+    .centerWidth {
+        width: 70%;
+        margin: 0px auto;
+        position: relative;
+    }
+
+    .sec1 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        opacity: 0;
+        transition: 2s;
+        /* background: red; */
+    }
+
+    .sec1 li {
+        border-radius: 40px;
+        margin: 50px;
+        overflow: hidden;
+    }
+
+    .sec1 img:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .sec1 .one {
+        height: 560px;
+    }
+
+    .sec1 .thr {
+        width: 700px;
+        height: 1020px;
+    }
+
+    .sec1 .fou {
+        opacity: 0;
+    }
+
+    .sec1 .fiv {
+        height: 340px;
+    }
+
+    .sec1 .six {
+        height: 520px;
+    }
+
+    /* sec2 */
+    .sec2 .notice {
+        width: 100%;
+        height: 1000px;
+        background-image: linear-gradient(to bottom, #fff, lightgray);
+        position: relative;
+        /* background: yellow; */
+    }
+
+    /* slide */
+    .slideWrap {
+        width: 95%;
+        height: 470px;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
+    .slides {
+        display: flex;
+    }
+
+    .slides img {
+        width: 1300px;
+        height: 100%;
+    }
+
+    .sec2 .bgTextMix {
+        width: 95%;
+        margin: 0px auto;
+        padding-top: 300px;
+    }
+
+    .sec2 .bgTextMix .jul {
+        font-size: 5rem;
+        font-family: 'TTLaundryGothicB';
+        transition: 1s;
+    }
+
+    .jul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .julArrow {
+        transition: 2s;
+    }
+
+    .julArrow:hover {
+        filter: invert(100%);
+        transition: 0.5s;
+    }
+
+    .rollUp {
+        margin-top: 100px;
+    }
+
+    .rollUp h4 {
+        width: 50%;
+        margin: 20px 0px;
+        font-size: 40px;
+        text-align: left;
+        font-family: 'TTLaundryGothicB';
+        transition: 1s;
+    }
+
+    .rollUp p {
+        width: 100%;
+        font-size: 13px;
+        margin: 20px 0px;
+        text-align: right;
+        font-family: 'TTLaundryGothicB';
+        transition: 1s;
+    }
+
+    /* rollingText */
+    .rollingText {
+        width: 100%;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .track {
+        position: relative;
+        width: 3000px;
+        animation: roll 10s linear infinite;
+    }
+
+    @keyframes roll {
+        0% {
+            left: 0;
+        }
+
+        100% {
+            left: -650px;
+        }
+    }
+
+    .track p {
+        float: left;
+        width: 650px;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .rollingText:hover {
+        background-color: #222;
+        color: #fff;
+    }
+}
+
+@media (max-width:767px) {
+
+    /* visual */
+    #visual {
+        width: 100%;
+        height: 780px;
+        background-color: #222;
+        position: relative;
+        box-sizing: border-box;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .viText {
+        color: hsl(0, 0%, 80%);
+        font-size: 4.5rem;
+        padding-top: 100px;
+    }
+
+    .viText p {
+        width: 100%;
+        height: 100px;
+        font-family: "Rubik Dirt", system-ui;
+        /* border: 1px solid #fff; */
+    }
+
+
+    .viText span {
+        width: 100%;
+        height: 10px;
+        display: block;
+        transition: 2s;
+        overflow: hidden;
+        /* background: red; */
+    }
+
+    #visual .star {
+        width: 200px;
+        height: 150px;
+        font-size: 100px;
+        text-align: center;
+        position: absolute;
+        top: 60%;
+        left: 23%;
+        transform-origin: center;
+        color: #fff;
+        animation: star 5s linear infinite;
+        /* border: 4px solid #333; */
+    }
+
+    @keyframes star {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        50% {
+            transform: rotate(180deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    /* text */
+    #visual .bottomText {
+        font-size: 1.2rem;
+        font-family: 'TTLaundryGothicB';
+        color: #fff;
+        margin-top: 130px;
+    }
+
+    #visual .bottomText li {
+        margin-bottom: 15px;
+    }
+
+    #visual .bottomText div {
+        font-size: 1rem;
+    }
+
+    #visual .bottomText>p {
+        display: none;
+    }
+
+    #visual .bottomText .dot {
+        display: none;
+    }
+
+    #visual .more {
+        display: none;
+    }
+
+    /* container */
+    #container {
+        height: 50vh;
+    }
+
+    .innerScroll {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .scrollWrap {
+        font-family: 'TTLaundryGothicB';
+    }
+
+    .scrollWrap li {
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        margin: 0px auto;
+        padding-top: 100px;
+    }
+
+    .scrollWrap li:nth-child(2) {
+        height: 350px;
+    }
+
+    .scrollWrap .big {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: 2s;
+    }
+
+    .scrollWrap .big img {
+        width: 200px;
+    }
+
+    .scrollWrap .big p {
+        font-size: 30px;
+    }
+
+    .scrollWrap .big i {
+        font-size: 50px;
+        animation: Icon 5s linear infinite;
+    }
+
+    @keyframes Icon {
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
+
+    .scrollWrap .small {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: -30px;
+        opacity: 0;
+    }
+
+    .scrollWrap .small .moreBtn {
+        width: 100px;
+        height: 30px;
+        margin-left: 15px;
+        background-color: #ccc;
+        border-radius: 40px;
+        text-align: center;
+    }
+
+    .scrollWrap li:hover .small {
+        bottom: 20px;
+        opacity: 1;
+        transition: 1s;
+    }
+
+    .innerScroll .longText {
+        display: none;
+    }
+
+    /* section */
+    #section {
+        height: 200vh;
+        padding-top: 1000px;
+        transition: 2s;
+    }
+
+    /* sec1 */
+    .centerWidth {
+        width: 70%;
+        margin: 0px auto;
+        position: relative;
+    }
+
+    .sec1 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        transition: 2s;
+    }
+
+    .sec1 li {
+        border-radius: 15px;
+        margin: 10px;
+        overflow: hidden;
+    }
+
+    .sec1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sec1 img:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .sec1 .fou {
+        display: none;
+    }
+
+    /* sec2 */
+    .sec2 .notice {
+        width: 100%;
+        height: 500px;
+        padding-top: 600px;
+        background-image: linear-gradient(to bottom, #fff, lightgray);
+        position: relative;
+    }
+
+    /* slide */
+    .slideWrap {
+        width: 95%;
+        height: 200px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 40px;
+        overflow: hidden;
+        /* border: 1px solid #222; */
+    }
+
+    .slides {
+        width: 500%;
+        display: flex;
+    }
+
+    .slides img {
+        width: 59%;
+        /* height: 100%; */
+
+    }
+
+    .sec2 .bgTextMix {
+        position: relative;
+    }
+
+    .sec2 .bgTextMix .jul {
+        width: 77%;
+        font-size: 3rem;
+        font-family: 'TTLaundryGothicB';
+        transition: 1s;
+        position: absolute;
+        top: -80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .jul {
+        display: flex;
+    }
+
+    .julArrow {
+        transition: 2s;
+    }
+
+    .julArrow:hover {
+        filter: invert(100%);
+        transition: 0.5s;
+    }
+
+    .rollUp {
+        width: 100%;
+        margin: 0px auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .rollUp h4 {
+        width: 50%;
+        font-size: 40px;
+        text-align: left;
+        font-family: 'TTLaundryGothicB';
+        transition: 1s;
+    }
+
+    .rollUp p {
+        width: 100%;
+        margin: 20px 0px;
+        font-size: 13px;
+        text-align: right;
+        font-family: 'TTLaundryGothicB';
+        transition: 1s;
+    }
+
+    /* rollingText */
+    .rollingText {
+        width: 100%;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .track {
+        position: relative;
+        width: 3000px;
+        animation: roll 10s linear infinite;
+    }
+
+    @keyframes roll {
+        0% {
+            left: 0;
+        }
+
+        100% {
+            left: -650px;
+        }
+    }
+
+    .track p {
+        float: left;
+        width: 650px;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .rollingText:hover {
+        background-color: #222;
+        color: #fff;
+    }
+}
