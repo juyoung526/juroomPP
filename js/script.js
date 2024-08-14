@@ -1,13 +1,23 @@
 $(function () {
   // header
-  let top0 = $("#section0").offset().top;
-  let top1 = $("#section1").offset().top;
-  let top2 = $("#section2").offset().top;
-  let top3 = $("#section3").offset().top;
-  let top4 = $("#section4").offset().top;
+  let top0 = $("#section0").offset().top - 10;
+  let top1 = $("#section1").offset().top - 10;
+  let top2 = $("#section2").offset().top - 10;
+  let top3 = $("#section3").offset().top - 10;
+  let top4 = $("#section4").offset().top - 10;
 
   $(window).on("scroll", function () {
     let scroll = $(this).scrollTop();
+
+    let menuOnOff = 0;
+    console.log(menuOnOff);
+
+    if (scroll > menuOnOff) {
+      $("#main").css("top", "-50px");
+    } else {
+      $("#main").css("top", "0");
+    }
+
     if (scroll >= top0 && scroll <= top1) {
       $(".navi li").removeClass("on");
       $(".navi li").eq(0).addClass("on");
@@ -40,7 +50,7 @@ $(function () {
     $("html,body").stop().animate({ scrollTop: 0 }, 500);
   });
   //   section0
-  $(".top").stop().animate({ height: "370px" }, 1000);
+  $(".top").stop().animate({ height: "550px" }, 1000);
 
   $(".bottom").stop().animate({ height: "190px" }, 1000);
 
@@ -62,30 +72,6 @@ $(function () {
   // section1
 
   // section2
-  $("#section2 .One").on("mouseenter", function () {
-    $("#section2 .one").toggleClass("on");
-  });
-  $("#section2 .Two").on("mouseenter", function () {
-    $("#section2 .two").toggleClass("on");
-  });
-  $("#section2 .Thiree").on("mouseenter", function () {
-    $("#section2 .thiree").toggleClass("on");
-  });
-  $("#section2 .Four").on("mouseenter", function () {
-    $("#section2 .four").toggleClass("on");
-  });
-  $("#section2 .One").on("mouseleave", function () {
-    $("#section2 p").removeClass("on");
-  });
-  $("#section2 .Two").on("mouseleave", function () {
-    $("#section2 p").removeClass("on");
-  });
-  $("#section2 .Thiree").on("mouseleave", function () {
-    $("#section2 p").removeClass("on");
-  });
-  $("#section2 .Four").on("mouseleave", function () {
-    $("#section2 p").removeClass("on");
-  });
 
   // section3
   $(".subTitle li").on("click", function () {
