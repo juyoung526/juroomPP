@@ -39,7 +39,6 @@ body {
   overflow-x: hidden;
   font-family: "MangoDdobak-B";
   word-break: keep-all;
-  aspect-ratio: 320 / 100;
 }
 
 @media (min-width: 1800px) {
@@ -244,6 +243,8 @@ body {
 
   /* section1 */
   #section1 {
+    width: 100%;
+    height: 100vh;
     position: relative;
   }
   #section1 .aboutMe {
@@ -318,6 +319,8 @@ body {
 
   /* section2 */
   #section2 {
+    width: 100%;
+    height: 100vh;
     padding-top: 100px;
     padding-left: 100px;
     position: relative;
@@ -431,8 +434,11 @@ body {
 
   /* section3 */
   #section3 {
+    width: 100%;
+    height: 100vh;
     padding: 100px;
     position: relative;
+    box-sizing: border-box;
   }
 
   #section3 .cont h3 {
@@ -620,13 +626,13 @@ body {
 
   #footer p:first-child {
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     right: 10px;
   }
 
   #footer p:nth-child(2) {
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     left: 10px;
   }
 }
@@ -833,6 +839,8 @@ body {
 
   /* section1 */
   #section1 {
+    width: 100%;
+    height: 100vh;
     position: relative;
   }
   #section1 .aboutMe {
@@ -905,8 +913,19 @@ body {
     opacity: 1;
   }
 
+  .skils {
+    font-size: 1.2rem;
+    display: flex;
+  }
+
+  .skils h5 {
+    margin-right: 20px;
+  }
+
   /* section2 */
   #section2 {
+    width: 100%;
+    height: 100vh;
     padding-top: 0;
     padding-left: 50px;
     position: relative;
@@ -1030,8 +1049,11 @@ body {
 
   /* section3 */
   #section3 {
+    width: 100%;
+    height: 100vh;
     padding: 100px 50px 100px 100px;
     position: relative;
+    box-sizing: border-box;
   }
 
   #section3 .cont h3 {
@@ -1163,6 +1185,8 @@ body {
 
   /* section4 */
   #section4 {
+    width: 100%;
+    height: 100vh;
     box-sizing: border-box;
     padding: 200px 100px;
     position: relative;
@@ -1223,13 +1247,13 @@ body {
 
   #footer p:first-child {
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     right: 10px;
   }
 
   #footer p:nth-child(2) {
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     left: 10px;
   }
 }
@@ -1515,8 +1539,11 @@ body {
 
   /* section3 */
   #section3 {
+    width: 100%;
+    height: 100vh;
     padding: 100px 50px;
     position: relative;
+    box-sizing: border-box;
   }
 
   #section3 .cont h3 {
@@ -1581,6 +1608,7 @@ body {
 
   #section3 .Img2 img {
     width: 100%;
+    height: 60vh;
   }
 
   #section3 .Image li.back {
@@ -1651,9 +1679,12 @@ body {
 
   /* section4 */
   #section4 {
+    width: 100%;
+    height: 100vh;
     box-sizing: border-box;
-    padding: 200px 5%;
+    padding: 100px 5%;
     position: relative;
+    box-sizing: border-box;
   }
 
   #section4 .bBox {
@@ -1716,13 +1747,13 @@ body {
 
   #footer p:first-child {
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     right: 10px;
   }
 
   #footer p:nth-child(2) {
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     left: 10px;
   }
 }
@@ -1820,6 +1851,7 @@ body {
   #container > div {
     height: 100vh;
     box-sizing: border-box;
+    /* border: 2px solid red; */
   }
 
   /* section0 */
@@ -2036,6 +2068,10 @@ body {
     cursor: pointer;
   }
 
+  .friend h3 {
+    display: none;
+  }
+
   #section2 .buggy img {
     width: 20%;
     position: absolute;
@@ -2046,16 +2082,7 @@ body {
   }
 
   #section2 .illText h2 {
-    font-size: 2rem;
-    text-align: right;
-    padding-right: 5%;
-    font-family: "Black Ops One", system-ui;
-    -webkit-text-stroke: 0 #333;
-    color: transparent;
-    text-shadow: 1px 1px 1px #d6d2d2, 1px 2px 0 #a8a7a6, 2px 3px 0 #8b8a89,
-      2px 4px 0px #7d7b7a, 3px 5px 0px #686766, 3px 6px 3px #5f5e5d,
-      4px 7px 3px #5f5e5d, 5px 8px 3px #5f5e5d;
-    z-index: 98;
+    display: none;
   }
 
   #section2 .illText div {
@@ -2065,6 +2092,7 @@ body {
 
   /* section3 */
   #section3 {
+    height: 100vh;
     padding: 100px 0px;
     position: relative;
   }
@@ -2078,10 +2106,7 @@ body {
   }
 
   #section3 .subTitle {
-    width: 90%;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
+    display: none;
   }
 
   #section3 .subTitle li {
@@ -2111,22 +2136,22 @@ body {
   }
 
   #section3 .Img ul {
-    width: calc(100% * 5);
+    /* width: calc(100% * 5); */
     display: flex;
     position: relative;
   }
 
   #section3 .Img li {
-    width: 90%;
+    width: 70%;
     position: absolute;
   }
 
   #section3 .Img img {
-    width: 20%;
+    width: 100%;
   }
 
   #section3 .Img2 {
-    width: 100%;
+    width: 80%;
     position: absolute;
     left: 45%;
     transform: translateX(-50%);
@@ -2204,8 +2229,10 @@ body {
 
   /* section4 */
   #section4 {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 5%;
     box-sizing: border-box;
-    padding: 200px 5%;
     position: relative;
   }
 
@@ -2219,7 +2246,7 @@ body {
     font-family: "Black Ops One", system-ui;
     font-weight: 400;
     font-style: normal;
-    line-height: 10rem;
+    line-height: 8rem;
   }
 
   #section4 .big li:hover {
@@ -2271,14 +2298,14 @@ body {
   #footer p:first-child {
     width: 50%;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     right: 0px;
   }
 
   #footer p:nth-child(2) {
     width: 50%;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     left: 10px;
   }
 }
@@ -2287,9 +2314,11 @@ body {
 @media (max-width: 1300px) and (min-width: 1200px) {
   /* section2 */
   #section2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
     padding-top: 0;
     padding-left: 50px;
-    position: relative;
   }
 
   #section2 .ill img {
@@ -2410,15 +2439,16 @@ body {
 
   /*section3*/
   #section3 .Img {
-    width: 90%;
+    width: 70%;
     height: 30vh;
     position: absolute;
-    top: 8%;
-    left: 50%;
+    top: 9%;
+    left: 40%;
     transform: translateX(-50%);
     overflow: hidden;
   }
 }
+
 @media (max-width: 1200px) and (min-width: 1100px) {
   /* section2 */
   #section2 {
@@ -2919,11 +2949,11 @@ body {
 @media (max-width: 400px) and (min-width: 300px) {
   /*section3*/
   #section3 .Img {
-    width: 95%;
+    width: 100%;
     height: 20vh;
     position: absolute;
     top: 5%;
-    left: 50%;
+    left: 60%;
     transform: translateX(-50%);
     overflow: hidden;
   }
